@@ -1,0 +1,29 @@
+{
+    "name": "clarion-app/gtd-backend",
+    "description": "A Laravel package implementing a Getting Things Done backend.",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "ClarionApp\\GettingThingsDone\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Tim Schwartz",
+            "email": "tim@metaverse.systems"
+        }
+    ],
+    "require": {
+        "php": ">=7.4",
+        "illuminate/support": "^8.0|^9.0|^10.0",
+        "clarion-app/eloquent-multichain-bridge": "dev-main"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ClarionApp\\GettingThingsDone\\GettingThingsDoneServiceProvider"
+            ]
+        }
+    }
+}
