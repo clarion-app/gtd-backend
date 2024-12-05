@@ -15,8 +15,6 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
-        "illuminate/support": "^8.0|^9.0|^10.0",
         "clarion-app/eloquent-multichain-bridge": "dev-main"
     },
     "extra": {
