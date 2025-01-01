@@ -3,12 +3,14 @@
 namespace ClarionApp\GettingThingsDone;
 
 use Illuminate\Support\ServiceProvider;
+use ClarionApp\Backend\ClarionPackageServiceProvider;
 
-class GettingThingsDoneServiceProvider extends ServiceProvider
+class GettingThingsDoneServiceProvider extends ClarionPackageServiceProvider
 {
-    public function boot()
+    public function boot(): void
     {
-        // Load migrations
+        parent::boot();
+        
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         if(!$this->app->routesAreCached())
@@ -17,8 +19,8 @@ class GettingThingsDoneServiceProvider extends ServiceProvider
         }
     }
 
-    public function register()
+    public function register(): void
     {
-        //
+        parent::register();
     }
 }

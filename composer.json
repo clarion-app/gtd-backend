@@ -1,6 +1,6 @@
 {
     "name": "clarion-app/gtd-backend",
-    "description": "A Laravel package implementing a Getting Things Done backend.",
+    "description": "Provides operations to implement the Getting Things Done organization system.",
     "type": "library",
     "license": "MIT",
     "autoload": {
@@ -14,14 +14,26 @@
             "email": "tim@metaverse.systems"
         }
     ],
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../backend"
+        }
+    ],
     "require": {
-        "clarion-app/eloquent-multichain-bridge": "dev-main"
+        "clarion-app/eloquent-multichain-bridge": "dev-main",
+        "clarion-app/backend": "dev-main"
     },
     "extra": {
         "laravel": {
             "providers": [
                 "ClarionApp\\GettingThingsDone\\GettingThingsDoneServiceProvider"
             ]
+        },
+        "clarion": {
+            "app-name": "clarion-app/gtd",
+            "description": "Provides operations to implement the Getting Things Done organization system."
         }
-    }
+    },
+    "minimum-stability": "dev"
 }
