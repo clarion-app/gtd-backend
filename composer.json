@@ -31,7 +31,7 @@
             ]
         },
         "clarion": {
-            "app-name": "clarion-app/gtd",
+            "app-name": "@clarion-app/gtd",
             "description": "Provides operations to implement the Getting Things Done organization system."
         }
     },

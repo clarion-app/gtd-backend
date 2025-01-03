@@ -2,7 +2,6 @@
 
 namespace ClarionApp\GettingThingsDone;
 
-use Illuminate\Support\ServiceProvider;
 use ClarionApp\Backend\ClarionPackageServiceProvider;
 
 class GettingThingsDoneServiceProvider extends ClarionPackageServiceProvider
